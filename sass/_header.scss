@@ -1,0 +1,209 @@
+// Links
+@use 'variables' as *;
+@use 'mixins' as *;
+@use 'keyframes' as *;
+//BODY DE JUEGOS
+
+// header index
+
+
+.header-index {
+  display: flex;
+  width: 100%;
+  height: 100px;
+}
+
+.idx-main-navigation {
+  @include idx-gradient-background($idx-primary-gradient);
+  @include idx-transition-all();
+  box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;  // No es necesario absolute aquí
+
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.navbar-nav {
+  margin-right: 20px;  // Mueve .navbar-nav hacia la izquierda
+}
+
+.d-flex {
+  margin-left: 20px;  // Mueve .d-flex hacia la derecha
+}
+
+
+.navbar-nav {
+    display: flex;
+    gap: 50px;
+    padding-left: 400px;  // Ajusta según lo necesites
+  }
+  
+
+
+.idx-brand-area {
+  position: relative; 
+  top: 20px; // Ajusta según lo que necesites
+  font-weight: bold;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  color: $idx-white !important;
+  text-shadow: 0 0 10px rgba($idx-white, 0.5);
+  font-size: 1.4rem;
+}
+
+.idx-nav-item-link {
+  display: flex;
+  color: rgba($idx-white, 0.8) !important;  
+  @include idx-transition-all();  
+  position: relative;
+
+  @include idx-hover-effects();
+  color: $idx-white !important;  
+  font-size: 1.2rem;
+
+  &::after {
+    content: '';
+    position: absolute;
+    width: 0;
+    height: 2px;
+    bottom: 0;
+    left: 50%;
+    background-color: $idx-white;
+    @include idx-transition-all();
+  }
+
+  &:hover {
+    color: $idx-white !important; 
+    &::after {
+      width: 100%;
+      left: 0;
+    }
+  }
+}
+
+
+
+// header juegos 
+
+.header-juegos {
+  @include gradient-background($gradient-colors, 8s);
+  width: 100%;
+  padding: 10px 0;
+  overflow: hidden;  
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+
+
+
+/* Evita conflictos con Bootstrap */
+.custom-navbar {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 60px;
+  width: 100%;
+}
+
+/* Personalización de la navegación */
+.custom-navbar-nav {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+}
+
+/* Estilos para los enlaces */
+.custom-nav-link {
+  font-size: 1.2rem;
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+  padding: 5px 10px;
+  border-radius: 5px;
+  background: inherit;
+  transition: all 0.3s ease;
+}
+
+.custom-nav-link:hover {
+  background-color: rgba(255, 255, 255, 0.2);
+  color: white;
+  transform: scale(1.1);
+}
+
+/* Estilos personalizados para la barra de búsqueda */
+.custom-search-form {
+  width: 80%;
+  justify-content: center;
+}
+
+.custom-search-input {
+  font-size: 1rem;
+  padding: 0.4rem 0.8rem;
+  width: 70%;
+}
+
+.custom-search-button {
+  font-size: 1rem;
+  padding: 0.4rem 0.8rem;
+  width: 30%;
+}
+
+//header nuevo
+#header-nuevo {
+  grid-area: header;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 40px;
+}
+
+.input-nuevos {
+  padding: 10px;
+  padding-right: 35px;
+  border-radius: 5px 0 0 5px;
+  border: 0;
+  outline: none;
+}
+
+#nav-header-nuevos {
+  grid-area: nav;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+}
+
+
+// header iniciar sesion
+#id-iniciarsesion {
+  background-image: url('icons/fondoblanco.jpg');
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  height: 100vh;
+}
+
+.header-iniciarsesion {
+  @include gradient-background ($primary-gradient);
+  border-radius: 10px;
+  padding: 10px 0;
+}
+
+
+//header contactos 
+
+.container-fluid {
+  background-color: black;
+}
+

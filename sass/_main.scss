@@ -1,0 +1,266 @@
+// _main.scss
+@use 'variables' as *;
+@use 'mixins' as *;
+// Main index
+/* Reset */
+
+
+ // container de cards index
+ .section-main-idx1 {
+ margin-top: 110px;
+}
+.section-main-idx2 {
+  margin-top: 100px;
+ }
+ .section-main-idx3 {
+  margin-top: 100px;
+ }
+ .section-main-idx4 {
+  margin-top: 100px;
+ }
+.section-titulo-idx
+
+  {
+    text-align: center;
+    margin-bottom: 20px;
+  
+    h2 {
+      margin-left: -400px; 
+      font-size: 24px;
+      font-weight: bold;
+      color: $primary-color;
+    }
+  
+    hr {
+      width: 670px;
+      height: 3px;
+      background-color: #ff9a8b;
+      border: none;
+      margin: 5px auto 0;
+    }
+  }
+
+.custom-row {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 17px; // Espacio reducido entre las cards
+}
+
+.game-card {
+  width: 190px; // Tamaño más pequeño de la card
+  height: 290px; // Altura reducida
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease-in-out;
+
+  &:hover {
+    transform: translateY(-3px);
+  }
+
+  .game-img {
+    width: 100%;
+    height: 70%;
+    object-fit: cover;
+  }
+
+  .card-body {
+    padding: 5px;
+    text-align: center;
+
+    .card-title {
+      font-size: 12px;
+      font-weight: bold;
+      color: #333;
+      margin-bottom: 3px;
+    }
+
+    .card-text {
+      font-size: 10px;
+      color: #555;
+      margin-bottom: 8px;
+    }
+
+    .btn-buy {
+      background-color: #ff9a8b;
+      color: white;
+      border: none;
+      padding: 5px 10px;
+      border-radius: 4px;
+      font-size: 10px;
+      font-weight: bold;
+      text-transform: uppercase;
+      cursor: pointer;
+      transition: background-color 0.3s;
+
+      &:hover {
+        background-color: #ff6f6f;
+      }
+    }
+  }
+}
+img.me-2 {
+  width: 50px; /* Ajusta al tamaño que necesites */
+  height: auto; /* Mantiene las proporciones */
+}
+
+
+/* Ajuste responsive */
+@media (max-width: 1024px) {
+  .game-card {
+    width: 140px;
+    height: 220px;
+  }
+}
+
+@media (max-width: 768px) {
+  .game-card {
+    width: 120px;
+    height: 200px;
+  }
+}
+
+  
+ 
+
+// main juegos 
+.main-juegos {
+    @include grid-layout;
+  
+}
+
+// Navbar y dropdowns
+.navbar-dark .navbar-nav .nav-link:hover {
+    background-color: #555;
+    border-radius: 5px;
+}
+
+.dropdown-menu {
+    background-color: #444;
+}
+
+.dropdown-menu .dropdown-item:hover {
+    background-color: #555;
+}
+
+.row {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+ 
+    align-items: center ;
+    width: 100%;
+}
+
+.col-lg-3 {
+    flex: 0 0 25%;
+    max-width: 25%;
+    
+}
+
+.col-lg-9 {
+    flex: 0 0 75%;
+    max-width: 75%;
+}
+
+
+// Main nuevos
+
+#main-nuevo {
+    grid-area: main;
+    display: grid;
+    grid-template-areas:
+        "section1 section2 section3"
+        "section1 section2 section3"
+        "section1 section2 section3";
+    grid-template-columns: 1fr 2fr 2fr;
+    grid-template-rows: auto;
+    gap: 5px;
+    width: 100%;
+    height: auto;
+    border: 2px solid red;
+}
+
+.section1 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 20px;
+}
+
+.ul-items {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    font-size: 30px;
+    list-style-type: none;
+    gap: 30px;
+    padding: 0;
+    margin: 0;
+}
+
+.ul-items .Items {
+    text-decoration: none;
+    color: black;
+    transition: color 0.3s ease;
+    cursor: pointer;
+}
+
+.ul-items .Items:hover {
+    color: blue;
+}
+
+.h2-main {
+    text-align: center;
+}
+
+
+
+// Main iniciar sesion 
+
+#id-iniciarsesion {
+    background-image: url('icons/fondoblanco.jpg');
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    height: 100vh;
+}
+
+//Main contactos
+
+.container-fluid {
+    background-color: black;
+}
+
+.banner-bg {
+    position: relative;
+    width: 100%;
+    height: 350px;
+    background-color: black;
+}
+
+.banner-content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.banner-content h1 {
+    font-size: 2.5rem;
+}
+
+.banner-content p {
+    font-size: 1.5rem;
+}
+
+.banner-content h1,
+.banner-content p {
+    font-family: 'Roboto', sans-serif;
+}
+

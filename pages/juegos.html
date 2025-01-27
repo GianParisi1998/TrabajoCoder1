@@ -9,33 +9,35 @@
   <link rel="stylesheet" href="../style.css">
 </head>
 
-<body class=" body-juegos">
+<body >
   <header class="header-juegos">
-    <nav class="navbar navbar-expand-lg">
-      <a class="navbar-brand" href="#">TanoGames</a>
-      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
-        aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-      <div class="collapse navbar-collapse" id="navbarNav">
-        <ul class="navbar-nav">
-          <form class="d-flex" role="search" style="width: 80%; justify-content: center;">
-            <input class="form-control me-2" type="search" placeholder="Buscar" aria-label="Search"
-              style="font-size: 1rem; padding: 0.4rem 0.8rem; width: 70%;">
-            <button class="btn btn-outline-success" type="submit"
-              style="font-size: 1rem; padding: 0.4rem 0.8rem; width: 30%;">Buscar</button>
-          </form>
-
-          <li class="vinculos"> <a href="../index.html">Inicio</a></li>
-          <li class="vinculos"><a href="iniciarsesion.html">Iniciar sesión</a></li>
-          <li class="vinculos"><a href="juegos.html">Juegos</a></li>
-          <li class="vinculos"><a href="nuevos.html">Nuevos</a></li>
-          <li class="vinculos"><a href="contacto.html">Contacto</a></li>
-          
-        </ul>
-      </div>
-    </nav>
+    <div class="container">
+      <nav class="navbar navbar-expand-lg custom-navbar">
+        <a class="navbar-brand custom-navbar-brand" href="#">TanoGames</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+          aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse custom-navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav custom-navbar-nav">
+            <form class="d-flex custom-search-form" role="search">
+              <input class="form-control me-2 custom-search-input" type="search" placeholder="Buscar" aria-label="Search">
+              <button class="btn btn-outline-success custom-search-button" type="submit">Buscar</button>
+            </form>
+    
+            <li class="vinculos custom-vinculos"> <a class="custom-nav-link" href="../index.html">Inicio</a></li>
+            <li class="vinculos custom-vinculos"><a class="custom-nav-link" href="iniciarsesion.html">Iniciar sesión</a></li>
+            <li class="vinculos custom-vinculos"><a class="custom-nav-link" href="juegos.html">Juegos</a></li>
+            <li class="vinculos custom-vinculos"><a class="custom-nav-link" href="nuevos.html">Nuevos</a></li>
+            <li class="vinculos custom-vinculos"><a class="custom-nav-link" href="contacto.html">Contacto</a></li>
+          </ul>
+        </div>
+      </nav>
+    </div>
   </header>
+  
+  
+
 
   <main class="main-juegos">
     <section class="section-main-juegos">
@@ -90,161 +92,169 @@
 
   
 
-
-    <section class="section-main-juegos2">
-      <div class="container py-5">
-        <div class="row ">
-          <h1 class="H1-div-juegos">Mas populares</h1>
-          <div class="col-lg-3 mb-4">
-            <div class="bg-white p-4 rounded shadow-sm">
-              <h5 class="mb-4">Filtrar por</h5>
-              <ul class="list-unstyled">
-                <li><a href="#" class="text-decoration-none">Acción</a></li>
-                <li><a href="#" class="text-decoration-none">Aventura</a></li>
-                <li><a href="#" class="text-decoration-none">Deporte</a></li>
-                <li><a href="#" class="text-decoration-none">Simulación</a></li>
-                <li><a href="#" class="text-decoration-none">Estratégia</a></li>
-              </ul>
-            </div>
-          </div>
-         </div>
-          <div class="col-lg-9">
-            <div class="row">
-          
-              <div class="col-md-4 mb-4">
-                <div class="card product-card">
-                  <img src="../icons/BO2-PS3.jpg" class="card-img-top" alt="Producto 1"/>
-                  <div class="card-body">
-                    <h5 class="card-title">Call of duty BO2</h5>
-                    <p class="card-text">Disparos</p>
-                    <p class="price">$39.99</p>
-                    <a href="#" class="btn btn-primary w-100">Ver más</a>
-                  </div>
-                </div>
-              </div>
-              <div class="col-md-4 mb-4">
-                <div class="card product-card">
-                  <img src="../icons/TheLastOfUss.jpeg" class="card-img-top" alt="Producto 2"/>
-                  <div class="card-body">
-                    <h5 class="card-title">The last of uss II</h5>
-                    <p class="card-text">Acción</p>
-                    <p class="price">$29.99</p>
-                    <a href="#" class="btn btn-primary w-100">Ver más</a>
-                  </div>
-                </div>
-              </div>
-              <div class="col-md-4 mb-4">
-                <div class="card product-card">
-                  <img src="../icons/spiderman_ps4__nombre_provisional_-4004811.webp" class="card-img-top"
-                    alt="Producto 3"/>
-                  <div class="card-body">
-                    <h5 class="card-title">Spiderman</h5>
-                    <p class="card-text">Acción</p>
-                    <p class="price">$49.99</p>
-                    <a href="#" class="btn btn-primary w-100">Ver más</a>
-                  </div>
-                </div>
+      <section class="section-main-juegos2">
+        <div class="container py-5">
+          <div class="row">
+            <!-- Título -->
+            <h1 class="H1-div-juegos w-100">Más populares</h1>
+      
+            <!-- Filtro -->
+            <div class="col-lg-3 mb-4">
+              <div class="bg-white p-4 rounded shadow-sm">
+                <h5 class="mb-4">Filtrar por</h5>
+                <ul class="list-unstyled">
+                  <li><a href="#" class="text-decoration-none">Acción</a></li>
+                  <li><a href="#" class="text-decoration-none">Aventura</a></li>
+                  <li><a href="#" class="text-decoration-none">Deporte</a></li>
+                  <li><a href="#" class="text-decoration-none">Simulación</a></li>
+                  <li><a href="#" class="text-decoration-none">Estrategia</a></li>
+                </ul>
               </div>
             </div>
-
-            <div class="row">
-              <div class="col-md-2 mb-4"> 
-                <div class="card product-card">
-                  <img src="../icons/DYIN-LIGTH.jpg" class="card-img-top" alt="Dyin ligth"/>
-                  <div class="card-body">
-                    <h5 class="card-title">Dyin ligth</h5>
-                    <p class="card-text">Acción</p>
-                    <p class="price">$49.99</p>
-                    <a href="#" class="btn btn-primary w-100">Ver más</a>
+      
+            <!-- Contenedor de las cards -->
+            <div class="col-lg-9">
+              <div class="row">
+                <!-- Card 1 -->
+                <div class="col-md-4 mb-4">
+                  <div class="card product-card">
+                    <img src="../icons/BO2-PS3.jpg" class="card-img-top" alt="Producto 1"/>
+                    <div class="card-body">
+                      <h5 class="card-title">Call of Duty BO2</h5>
+                      <p class="card-text">Disparos</p>
+                      <p class="price">$39.99</p>
+                      <a href="#" class="btn btn-primary w-100">Ver más</a>
+                    </div>
                   </div>
                 </div>
-              </div>
-              <div class="col-md-2 mb-4"> 
-                <div class="card product-card">
-                  <img src="../icons/residentevil2.jpg" class="card-img-top" alt="Resident evil 2">
-                  <div class="card-body">
-                    <h5 class="card-title">Resident evil 2</h5>
-                    <p class="card-text">Survival horror</p>
-                    <p class="price">$39.99</p>
-                    <a href="#" class="btn btn-primary w-100">Ver más</a>
+      
+                <!-- Card 2 -->
+                <div class="col-md-4 mb-4">
+                  <div class="card product-card">
+                    <img src="../icons/TheLastOfUss.jpeg" class="card-img-top" alt="Producto 2"/>
+                    <div class="card-body">
+                      <h5 class="card-title">The Last of Us II</h5>
+                      <p class="card-text">Acción</p>
+                      <p class="price">$29.99</p>
+                      <a href="#" class="btn btn-primary w-100">Ver más</a>
+                    </div>
                   </div>
                 </div>
-              </div>
-              <div class="col-md-2 mb-4"> 
-                <div class="card product-card">
-                  <img src="../icons/images.jpg" class="card-img-top" alt="Skyrim">
-                  <div class="card-body">
-                    <h5 class="card-title">Skyrim</h5>
-                    <p class="card-text">Aventura medieval</p>
-                    <p class="price">$59.99</p>
-                    <a href="#" class="btn btn-primary w-100">Ver más</a>
+      
+                <!-- Card 3 -->
+                <div class="col-md-4 mb-4">
+                  <div class="card product-card">
+                    <img src="../icons/spiderman_ps4__nombre_provisional_-4004811.webp" class="card-img-top" alt="Producto 3"/>
+                    <div class="card-body">
+                      <h5 class="card-title">Spiderman</h5>
+                      <p class="card-text">Acción</p>
+                      <p class="price">$49.99</p>
+                      <a href="#" class="btn btn-primary w-100">Ver más</a>
+                    </div>
                   </div>
                 </div>
-              </div>
-              <div class="col-md-2 mb-4"> 
-                <div class="card product-card">
-                  <img src="../icons/Horizon_portada.webp" class="card-img-top" alt="Horizon zero dawn">
-                  <div class="card-body">
-                    <h5 class="card-title">Horizon zero dawn</h5>
-                    <p class="card-text">Aventura</p>
-                    <p class="price">$39.99</p>
-                    <a href="#" class="btn btn-primary w-100">Ver más</a>
-                  </div>
+              </div> 
+            </div> 
+          </div> 
+      
+          <!-- Segunda fila de cards con margen entre ellas -->
+          <div class="row mt-4">
+            <div class="col-md-2 mb-4"> 
+              <div class="card product-card">
+                <img src="../icons/DYIN-LIGTH.jpg" class="card-img-top" alt="Dyin ligth"/>
+                <div class="card-body">
+                  <h5 class="card-title">Dyin ligth</h5>
+                  <p class="card-text">Acción</p>
+                  <p class="price">$49.99</p>
+                  <a href="#" class="btn btn-primary w-100">Ver más</a>
                 </div>
               </div>
             </div>
-
-           
-            <div class="row">
-              <div class="col-md-2 mb-4"> 
-                <div class="card product-card">
-                  <img src="../icons/eafc.jpg" class="card-img-top" alt="Producto 8">
-                  <div class="card-body">
-                    <h5 class="card-title">EA FC</h5>
-                    <p class="card-text">Deportes</p>
-                    <p class="price">$49.99</p>
-                    <a href="#" class="btn btn-primary w-100">Ver más</a>
-                  </div>
+            <div class="col-md-2 mb-4"> 
+              <div class="card product-card">
+                <img src="../icons/residentevil2.jpg" class="card-img-top" alt="Resident evil 2">
+                <div class="card-body">
+                  <h5 class="card-title">Resident evil 2</h5>
+                  <p class="card-text">Survival horror</p>
+                  <p class="price">$39.99</p>
+                  <a href="#" class="btn btn-primary w-100">Ver más</a>
                 </div>
               </div>
-              <div class="col-md-2 mb-4"> 
-                <div class="card product-card">
-                  <img src="../icons/mw3-ps3.jpg" class="card-img-top" alt="Producto 9">
-                  <div class="card-body">
-                    <h5 class="card-title">COD MW3 PS3</h5>
-                    <p class="card-text">Disparos</p>
-                    <p class="price">$39.99</p>
-                    <a href="#" class="btn btn-primary w-100">Ver más</a>
-                  </div>
+            </div>
+            <div class="col-md-2 mb-4"> 
+              <div class="card product-card">
+                <img src="../icons/images.jpg" class="card-img-top" alt="Skyrim">
+                <div class="card-body">
+                  <h5 class="card-title">Skyrim</h5>
+                  <p class="card-text">Aventura medieval</p>
+                  <p class="price">$59.99</p>
+                  <a href="#" class="btn btn-primary w-100">Ver más</a>
                 </div>
               </div>
-              <div class="col-md-2 mb-4"> 
-                <div class="card product-card">
-                  <img src="../icons/Asasins cri.jpg" class="card-img-top" alt="Producto 10">
-                  <div class="card-body">
-                    <h5 class="card-title">Producto 10</h5>
-                    <p class="card-text">Acción</p>
-                    <p class="price">$49.99</p>
-                    <a href="#" class="btn btn-primary w-100">Ver más</a>
-                  </div>
-                </div>
-              </div>
-              <div class="col-md-2 mb-4"> 
-                <div class="card product-card">
-                  <img src="../icons/kingdom_hearts_ii-1681014.webp" class="card-img-top" alt="Producto 11">
-                  <div class="card-body">
-                    <h5 class="card-title">Kingdom Hearts 3</h5>
-                    <p class="card-text">Aventura</p>
-                    <p class="price">$39.99</p>
-                    <a href="#" class="btn btn-primary w-100">Ver más</a>
-                  </div>
+            </div>
+            <div class="col-md-2 mb-4"> 
+              <div class="card product-card">
+                <img src="../icons/Horizon_portada.webp" class="card-img-top" alt="Horizon zero dawn">
+                <div class="card-body">
+                  <h5 class="card-title">Horizon zero dawn</h5>
+                  <p class="card-text">Aventura</p>
+                  <p class="price">$39.99</p>
+                  <a href="#" class="btn btn-primary w-100">Ver más</a>
                 </div>
               </div>
             </div>
           </div>
+      
+          <!-- Tercera fila de cards -->
+          <div class="row mt-4">
+            <div class="col-md-2 mb-4"> 
+              <div class="card product-card">
+                <img src="../icons/eafc.jpg" class="card-img-top" alt="EA FC"/>
+                <div class="card-body">
+                  <h5 class="card-title">EA FC</h5>
+                  <p class="card-text">Deportes</p>
+                  <p class="price">$49.99</p>
+                  <a href="#" class="btn btn-primary w-100">Ver más</a>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-2 mb-4"> 
+              <div class="card product-card">
+                <img src="../icons/mw3-ps3.jpg" class="card-img-top" alt="COD MW3 PS3"/>
+                <div class="card-body">
+                  <h5 class="card-title">COD MW3 PS3</h5>
+                  <p class="card-text">Disparos</p>
+                  <p class="price">$39.99</p>
+                  <a href="#" class="btn btn-primary w-100">Ver más</a>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-2 mb-4"> 
+              <div class="card product-card">
+                <img src="../icons/Asasins cri.jpg" class="card-img-top" alt="Asasins Creed"/>
+                <div class="card-body">
+                  <h5 class="card-title">Asasins Creed</h5>
+                  <p class="card-text">Acción</p>
+                  <p class="price">$49.99</p>
+                  <a href="#" class="btn btn-primary w-100">Ver más</a>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-2 mb-4"> 
+              <div class="card product-card">
+                <img src="../icons/kingdom_hearts_ii-1681014.webp" class="card-img-top" alt="Kingdom Hearts 3"/>
+                <div class="card-body">
+                  <h5 class="card-title">Kingdom Hearts 3</h5>
+                  <p class="card-text">Aventura</p>
+                  <p class="price">$39.99</p>
+                  <a href="#" class="btn btn-primary w-100">Ver más</a>
+                </div>
+              </div>
+            </div>
           </div>
-   </section>
-   </section>
+        </div>
+      </section>
+      
   </main>
 
 
