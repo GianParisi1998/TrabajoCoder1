@@ -608,9 +608,9 @@ footer .input-group {
   flex-wrap: wrap;
   justify-content: center;
   gap: 17px;
+  /* Ajuste responsive */
 }
-
-.game-card {
+.custom-row .game-card {
   width: 190px;
   height: 290px;
   background-color: #fff;
@@ -618,30 +618,30 @@ footer .input-group {
   box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
   transition: transform 0.3s ease-in-out;
 }
-.game-card:hover {
+.custom-row .game-card:hover {
   transform: translateY(-3px);
 }
-.game-card .game-img {
+.custom-row .game-card .game-img {
   width: 100%;
   height: 70%;
   object-fit: cover;
 }
-.game-card .card-body {
+.custom-row .game-card .card-body {
   padding: 5px;
   text-align: center;
 }
-.game-card .card-body .card-title {
+.custom-row .game-card .card-body .card-title {
   font-size: 12px;
   font-weight: bold;
   color: #333;
   margin-bottom: 3px;
 }
-.game-card .card-body .card-text {
+.custom-row .game-card .card-body .card-text {
   font-size: 10px;
   color: #555;
   margin-bottom: 8px;
 }
-.game-card .card-body .btn-buy {
+.custom-row .game-card .card-body .btn-buy {
   background-color: #ff9a8b;
   color: white;
   border: none;
@@ -653,29 +653,26 @@ footer .input-group {
   cursor: pointer;
   transition: background-color 0.3s;
 }
-.game-card .card-body .btn-buy:hover {
+.custom-row .game-card .card-body .btn-buy:hover {
   background-color: #ff6f6f;
 }
-
-img.me-2 {
-  width: 50px; /* Ajusta al tamaño que necesites */
-  height: auto; /* Mantiene las proporciones */
+.custom-row img.logo {
+  width: 50px;
+  height: auto;
 }
-
-/* Ajuste responsive */
 @media (max-width: 1024px) {
-  .game-card {
+  .custom-row .game-card {
     width: 140px;
     height: 220px;
   }
 }
 @media (max-width: 768px) {
-  .game-card {
+  .custom-row .game-card {
     width: 120px;
     height: 200px;
   }
 }
-.main-juegos {
+.custom-row .main-juegos {
   display: grid;
   grid-template-rows: auto 1fr;
   grid-template-columns: 1fr;
@@ -683,39 +680,32 @@ img.me-2 {
   min-height: 100vh;
   padding-bottom: 100px;
 }
-
-.navbar-dark .navbar-nav .nav-link:hover {
+.custom-row .navbar-dark .navbar-nav .nav-link:hover {
   background-color: #555;
   border-radius: 5px;
 }
-
-.dropdown-menu {
+.custom-row .dropdown-menu {
   background-color: #444;
 }
-
-.dropdown-menu .dropdown-item:hover {
+.custom-row .dropdown-menu .dropdown-item:hover {
   background-color: #555;
 }
-
-.row {
+.custom-row .row {
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
   align-items: center;
   width: 100%;
 }
-
-.col-lg-3 {
+.custom-row .col-lg-3 {
   flex: 0 0 25%;
   max-width: 25%;
 }
-
-.col-lg-9 {
+.custom-row .col-lg-9 {
   flex: 0 0 75%;
   max-width: 75%;
 }
-
-#main-nuevo {
+.custom-row #main-nuevo {
   grid-area: main;
   display: grid;
   grid-template-areas: "section1 section2 section3" "section1 section2 section3" "section1 section2 section3";
@@ -726,16 +716,14 @@ img.me-2 {
   height: auto;
   border: 2px solid red;
 }
-
-.section1 {
+.custom-row .section1 {
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: flex-start;
   gap: 20px;
 }
-
-.ul-items {
+.custom-row .ul-items {
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
@@ -746,23 +734,19 @@ img.me-2 {
   padding: 0;
   margin: 0;
 }
-
-.ul-items .Items {
+.custom-row .ul-items .Items {
   text-decoration: none;
   color: black;
   transition: color 0.3s ease;
   cursor: pointer;
 }
-
-.ul-items .Items:hover {
+.custom-row .ul-items .Items:hover {
   color: blue;
 }
-
-.h2-main {
+.custom-row .h2-main {
   text-align: center;
 }
-
-#id-iniciarsesion {
+.custom-row #id-iniciarsesion {
   background-image: url("icons/fondoblanco.jpg");
   background-size: cover;
   background-position: center;
@@ -771,35 +755,29 @@ img.me-2 {
   justify-content: flex-start;
   height: 100vh;
 }
-
-.container-fluid {
+.custom-row .container-fluid {
   background-color: black;
 }
-
-.banner-bg {
+.custom-row .banner-bg {
   position: relative;
   width: 100%;
   height: 350px;
   background-color: black;
 }
-
-.banner-content {
+.custom-row .banner-content {
   position: absolute;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
 }
-
-.banner-content h1 {
+.custom-row .banner-content h1 {
   font-size: 2.5rem;
 }
-
-.banner-content p {
+.custom-row .banner-content p {
   font-size: 1.5rem;
 }
-
-.banner-content h1,
-.banner-content p {
+.custom-row .banner-content h1,
+.custom-row .banner-content p {
   font-family: "Roboto", sans-serif;
 }
 

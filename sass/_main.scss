@@ -44,12 +44,11 @@
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  gap: 17px; // Espacio reducido entre las cards
-}
+  gap: 17px;
 
 .game-card {
-  width: 190px; // Tamaño más pequeño de la card
-  height: 290px; // Altura reducida
+  width: 190px; 
+  height: 290px; 
   background-color: #fff;
   border-radius: 8px;
   box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
@@ -100,9 +99,9 @@
     }
   }
 }
-img.me-2 {
-  width: 50px; /* Ajusta al tamaño que necesites */
-  height: auto; /* Mantiene las proporciones */
+img.logo {
+  width: 50px;
+  height: auto;
 }
 
 
@@ -263,4 +262,4 @@ img.me-2 {
 .banner-content p {
     font-family: 'Roboto', sans-serif;
 }
-
+}
