@@ -34,7 +34,30 @@
     filter: brightness(1.2);
   }
 }
+// Butons de imagen grande 
+.btn-welcome {
+  display: inline-block;
+  padding: 0.75rem 2rem;
+  background-color: #ff5f5f;
+  color: white;
+  font-size: 1.25rem;
+  font-weight: bold;
+  text-decoration: none;
+  border-radius: 50px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+  transition: background-color 0.3s, transform 0.3s;
+  text-transform: uppercase;
+}
 
+.btn-welcome:hover {
+  background-color: #ff2f2f;
+  transform: translateY(-5px);
+}
+
+.btn-welcome:focus {
+  outline: none;
+  box-shadow: 0 0 0 3px rgba(255, 95, 95, 0.5);
+}
 
 //button juegos 
 

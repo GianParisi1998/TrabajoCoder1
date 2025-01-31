@@ -11,7 +11,11 @@
   display: flex;
   width: 100%;
   height: 100px;
+  position: fixed;
+  top: 0;
+  left: 0;
 }
+
 
 .idx-main-navigation {
   @include idx-gradient-background($idx-primary-gradient);
@@ -20,7 +24,7 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  position: relative;  // No es necesario absolute aquí
+  position: relative; 
 
   top: 0;
   left: 0;
@@ -28,26 +32,24 @@
   height: 100%;
 }
 
-.navbar-nav {
-  margin-right: 20px;  // Mueve .navbar-nav hacia la izquierda
-}
 
 .d-flex {
-  margin-left: 20px;  // Mueve .d-flex hacia la derecha
+  margin-left: 20px; 
 }
 
 
 .navbar-nav {
-    display: flex;
-    gap: 50px;
-    padding-left: 400px;  // Ajusta según lo necesites
-  }
-  
+  margin-right: 20px;
+  display: flex;
+  gap: 50px;
+  padding-left: 400px; 
+}
 
 
 .idx-brand-area {
-  position: relative; 
-  top: 20px; // Ajusta según lo que necesites
+  margin-left: -25px;
+  position: relative;
+  top: 29px; 
   font-weight: bold;
   text-transform: uppercase;
   letter-spacing: 2px;
@@ -58,14 +60,14 @@
 
 .idx-nav-item-link {
   display: flex;
-  color: rgba($idx-white, 0.8) !important;  
-  @include idx-transition-all();  
+  color: rgba($idx-white, 0.8) !important;
+  @include idx-transition-all();
   position: relative;
 
   @include idx-hover-effects();
-  color: $idx-white !important;  
+  color: $idx-white !important;
   font-size: 1.2rem;
-
+  white-space: nowrap; 
   &::after {
     content: '';
     position: absolute;
@@ -78,7 +80,8 @@
   }
 
   &:hover {
-    color: $idx-white !important; 
+    color: $idx-white !important;
+
     &::after {
       width: 100%;
       left: 0;
@@ -86,124 +89,41 @@
   }
 }
 
-
-
-// header juegos 
-
-.header-juegos {
-  @include gradient-background($gradient-colors, 8s);
+.new-section-header {
   width: 100%;
-  padding: 10px 0;
-  overflow: hidden;  
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  text-align: center;
+  max-width: 100%;
+  position: fixed; 
+  top: 100px; /* Justo debajo del header */
+  left: 0;
+  z-index: 1000;
 }
 
-
-
-
-/* Evita conflictos con Bootstrap */
-.custom-navbar {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 60px;
-  width: 100%;
+.new-navbar {
+  background-color: #2980b9 !important;
+  height: 37px;
 }
 
-/* Personalización de la navegación */
-.custom-navbar-nav {
+.new-container {
+  background-color: #2980b9 !important;
   display: flex;
-  justify-content: center;
+  justify-content: space-between;
   align-items: center;
+}
+
+.new-navbar-collapse {
+  overflow-x: auto;
+  -webkit-overflow-scrolling: touch;
+}
+
+.new-navbar-nav {
+  display: flex;
+  flex-wrap: nowrap;
+  margin: 0;
+  padding: 0;
   gap: 20px;
 }
 
-/* Estilos para los enlaces */
-.custom-nav-link {
-  font-size: 1.2rem;
-  color: white;
-  text-decoration: none;
-  font-weight: bold;
-  padding: 5px 10px;
-  border-radius: 5px;
-  background: inherit;
-  transition: all 0.3s ease;
-}
-
-.custom-nav-link:hover {
-  background-color: rgba(255, 255, 255, 0.2);
-  color: white;
-  transform: scale(1.1);
-}
-
-/* Estilos personalizados para la barra de búsqueda */
-.custom-search-form {
-  width: 80%;
-  justify-content: center;
-}
-
-.custom-search-input {
-  font-size: 1rem;
-  padding: 0.4rem 0.8rem;
-  width: 70%;
-}
-
-.custom-search-button {
-  font-size: 1rem;
-  padding: 0.4rem 0.8rem;
-  width: 30%;
-}
-
-//header nuevo
-#header-nuevo {
-  grid-area: header;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  gap: 40px;
-}
-
-.input-nuevos {
-  padding: 10px;
-  padding-right: 35px;
-  border-radius: 5px 0 0 5px;
-  border: 0;
-  outline: none;
-}
-
-#nav-header-nuevos {
-  grid-area: nav;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  padding: 20px;
-}
-
-
-// header iniciar sesion
-#id-iniciarsesion {
-  background-image: url('icons/fondoblanco.jpg');
-  background-size: cover;
-  background-position: center;
-  display: flex;
-  flex-direction: column;
-  justify-content: flex-start;
-  height: 100vh;
-}
-
-.header-iniciarsesion {
-  @include gradient-background ($primary-gradient);
-  border-radius: 10px;
-  padding: 10px 0;
-}
-
-
-//header contactos 
-
-.container-fluid {
-  background-color: black;
+.new-nav-item {
+  white-space: nowrap;
 }
 
