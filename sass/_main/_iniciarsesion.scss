@@ -1,0 +1,17 @@
+// _main.scss
+@use '../variables' as *;
+@use '../mixins' as *;
+
+
+
+
+  .btn-outline-primary,
+.btn-outline-danger {
+    color: inherit !important; /* Mantiene el color del texto */
+    border-color: inherit !important; /* Mantiene el borde visible */
+}
+
+.btn-outline-primary i,
+.btn-outline-danger i {
+    color: inherit !important; /* Asegura que los iconos también sean visibles */
+}

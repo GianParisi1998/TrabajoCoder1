@@ -1,0 +1,39 @@
+// _main.scss
+@use '../variables' as *;
+@use '../mixins' as *;
+
+
+//Main contactos
+
+.container-fluid {
+    background-color: black;
+  }
+  
+  .banner-bg {
+    position: relative;
+    width: 30%;
+    height: 100px;
+    background-color: black;
+  }
+  
+  .banner-content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+  
+  .banner-content h1 {
+    font-size: 1.5rem;
+  }
+  
+  .banner-content p {
+    font-size: 1rem;
+  }
+  
+  .banner-content h1,
+  .banner-content p {
+    font-family: 'Roboto', sans-serif;
+  }
+  
+  

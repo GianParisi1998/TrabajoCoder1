@@ -6,8 +6,14 @@
 @use 'header' as *;
 @use 'imagenes' as *;
 @use 'keyframes' as *;
-@use 'main' as *;
+@use "./_main/index" as *;
+@use "./_main/contacto" as *;
+@use "./_main/iniciarsesion" as *;
+@use "./_main/juegos" as *;
+@use "./_main/nuevos" as*;
 @use 'mediaqueries' as *;
+@use 'carritodecompra' as *;
 @use 'mixins' as *;
 @use 'reset' as *;
 @use 'variables' as *;
+@use './_main/fornite'

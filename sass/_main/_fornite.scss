@@ -1,0 +1,94 @@
+.fortnite-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    padding: 40px 20px; /* Aumentado el padding superior para separarse del header */
+
+}
+
+.fortnite-card {
+    background: linear-gradient(to bottom right, #6a11cb 0%, #2575fc 100%);
+    border-radius: 10px;
+    width: 300px;
+    height: 400px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    color: white;
+    padding: 15px;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+    transition: transform 0.3s ease;
+    margin-top: 20px; /* Separación adicional del header */
+}
+
+.fortnite-card:hover {
+    transform: scale(1.05);
+}
+
+.fortnite-card-image {
+    width: 200px;
+    height: 200px;
+    background-color: rgba(255,255,255,0.2);
+    margin-bottom: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+}
+
+.fortnite-card-title {
+    font-size: 18px;
+    margin-bottom: 10px;
+    color: #ffd700;
+}
+
+.fortnite-card-description {
+    font-size: 14px;
+    margin-bottom: 15px;
+    opacity: 0.8;
+}
+
+.fortnite-card-price {
+    font-size: 24px;
+    color: #ffd700;
+    margin-bottom: 15px;
+}
+
+.fortnite-card-button {
+    display: inline-block;
+    background-color: #ffd700;
+    color: black;
+    text-decoration: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    text-align: center;
+}
+
+.fortnite-card-button:hover {
+    background-color: #ffec00;
+}
+.fortnite-row-top, .fortnite-row-bottom {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    width: 100%;
+}
+
+@media (max-width: 768px) {
+    .fortnite-row-top, .fortnite-row-bottom {
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+
+.fortnite-card-image img {
+    width: 300px;  
+    height: 100%;  
+
+    object-fit: cover;
+}

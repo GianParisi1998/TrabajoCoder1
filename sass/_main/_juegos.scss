@@ -1,0 +1,45 @@
+// _main.scss
+@use '../variables' as *;
+@use '../mixins' as *;
+
+
+// main juegos 
+.main-juegos {
+    @include grid-layout;
+  
+  }
+  
+  // Navbar y dropdowns
+  .navbar-dark .navbar-nav .nav-link:hover {
+    background-color: #555;
+    border-radius: 5px;
+  }
+  
+  .dropdown-menu {
+    background-color: #444;
+  }
+  
+  .dropdown-menu .dropdown-item:hover {
+    background-color: #555;
+  }
+  
+  .row {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+  
+    align-items: center;
+    width: 100%;
+  }
+  
+  .col-lg-3 {
+    flex: 0 0 25%;
+    max-width: 25%;
+  
+  }
+  
+  .col-lg-9 {
+    flex: 0 0 75%;
+    max-width: 75%;
+  }
+  
